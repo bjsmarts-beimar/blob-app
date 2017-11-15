@@ -4,9 +4,12 @@
   "private": true,
   "dependencies": {
     "jquery": "^3.2.1",
+    "materialize-css": "^0.100.2",
     "react": "^16.1.0",
     "react-dom": "^16.1.0",
     "react-materialize": "^1.0.17",
+    "react-responsive-modal": "^2.0.0",
+    "react-router-dom": "^4.2.2",
     "react-scripts": "1.0.17"
   },
   "scripts": {
