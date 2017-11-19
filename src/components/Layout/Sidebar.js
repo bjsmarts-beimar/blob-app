@@ -40,16 +40,12 @@ class Sidebar extends Component {
   render() {
     return (
       <div>
-          <ul id="slide-out" className="side-nav fixed">            
+          <ul id="slide-out" className="side-nav fixed" style={{paddingTop: "0px", height: "630px"}}>            
             <img id="logo" alt="logo" src="/images/logo.png" className="logo" />          
             <li><a href="/">HOME</a></li>
             <li><a href="/react">REACT</a></li>
             <li><a href="/angular">ANGULAR</a></li>
-            <li><a href="/ionic">IONIC</a></li>
-            <li><a href="/ios">IOS</a></li>
-            <li><a href="/android">ANDROID</a></li>
             <li><a href="/aspnet">ASP.NET</a></li>
-            <li><a href="/aspnetcore">ASP.NET CORE</a></li>
             <li><a href="/node">NODE</a></li>
             <li><a href="/rails">RUBY ON RAILS</a></li>
             <li><a href="/lavarel">PHP LAVAREL</a></li>

@@ -1,27 +1,39 @@
 import React, { Component } from 'react';
-import {Row, Col, Modal, Button} from 'react-materialize';
+import {Row, Col} from 'react-materialize';
+import { Redirect } from "react-router-dom";
 import Sidebar from '../Layout/Sidebar';
 import PopularPosts from '../Layout/PopularPosts.js';
-import Footer from '../Layout/Footer'
+import Footer from '../Layout/Footer';
+import Header from '../Layout/Header';
+import AuthService from '../../services/AuthService';
 
 import './Style.css';
 
 class HomePage extends Component {
 
-  contructor() {
-      
-  }
+  constructor(props) 
+  {
+    super(props);
+    this.Auth = new AuthService();
+
+    this.state = {
+      loggedIn : this.Auth.loggedIn()      
+    }
+    
+  }  
 
   render() {
+    
     return (
-      <div>          
+      <div>       
+          <Row className="right-align" >
+              <Header parentProps={this.props}/>
+          </Row>                       
           <Row>
 	          <Col s={12} m={9} >
               <Sidebar />  
               <div className="workarea">
-                <h1>Welcome to my Blog</h1>
-                
-                
+                <h1>Welcome to my Blog</h1>                                
               </div>
             </Col>
 	          <Col s={12} m={3}>
@@ -32,7 +44,7 @@ class HomePage extends Component {
             <Col s={12} >
               <Footer />
             </Col>
-          </Row>                          
+          </Row>                                    
       </div>
     );
   }

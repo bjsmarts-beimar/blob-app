@@ -3,13 +3,13 @@ import './Footer.css';
 
 class Footer extends Component {
 
-  contructor() {
-      
+  constructor() {
+      super();
   }
 
   render() {
     return (
-      <div>
+      <div style={{height: "100px"}}>
           <h1>Footer</h1>
       </div>
     );

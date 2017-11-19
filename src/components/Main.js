@@ -9,8 +9,9 @@ import DashboardPage from './Pages/DashboardPage';
 
 class Main extends Component {
 
-  contructor() {
-      
+  constructor() {
+    super();
+    
   }
 
   render() {

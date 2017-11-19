@@ -3,6 +3,7 @@ npm install react-materialize --save
 npm install materialize-css --save
 npm install jquery --save
 npm install react-responsive-modal --save
+npm install jwt-decode --save
 
 <!-- Import Google Icon Font & materialize.css -->
 <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
